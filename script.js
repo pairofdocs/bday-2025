@@ -86,7 +86,7 @@ document.addEventListener('DOMContentLoaded', function() {
             { transform: `translate(0, 0) rotate(0)`, opacity: 0.9 },
             { transform: `translate(${endX}px, ${endY}px) rotate(720deg)`, opacity: 0.7 }
         ], {
-            duration: duration * 1000,
+            duration: duration * 500,
             easing: 'cubic-bezier(0, .9, .57, 1)',
             fill: 'forwards'
         });
