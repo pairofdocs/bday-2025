@@ -7,8 +7,8 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // Adjust confetti count based on device type
     const confettiCount = {
-        initial: isMobile ? 15 : 30,
-        onClick: isMobile ? 80 : 150
+        initial: isMobile ? 150 : 150,
+        onClick: isMobile ? 300 : 300
     };
     
     // Update isMobile on resize
@@ -75,7 +75,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Animate confetti
     function animateConfetti(confetti) {
         // Random duration - shorter on mobile
-        const duration = Math.random() * (isMobile ? 2 : 3) + (isMobile ? 1.5 : 2);
+        const duration = Math.random() * (isMobile ? 3 : 3) + (isMobile ? 2 : 2);
         
         // Random end positions - now going upward
         const endX = (Math.random() - 0.5) * (isMobile ? 200 : 400);
